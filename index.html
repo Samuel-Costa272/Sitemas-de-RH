@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPs - Sistemas de RH</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .bg-verde {
+            background-color: #198754;
+        }
+
+        .text-verde {
+            color: #198754;
+        }
+
+        .bg-laranja {
+            background-color: #fd7e14;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #198754, #fd7e14);
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-verde fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">CAPs RH</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ceo">CEO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container" data-aos="fade-up">
+        <h1 class="display-4">Gestão de Pessoas com Zero Estresse*</h1>
+        <p class="lead">*Resultados podem variar dependendo do chefe.</p>
+        <button class="btn btn-light mt-3">Saiba Mais</button>
+    </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="py-5">
+    <div class="container text-center" data-aos="fade-right">
+        <h2 class="text-verde">Sobre Nós</h2>
+        <p>
+            A CAPs nasceu de uma ideia totalmente improvisada durante uma reunião que deveria ser um e-mail.
+            Nosso objetivo é revolucionar o RH com tecnologia, café frio e decisões questionáveis.
+        </p>
+    </div>
+</section>
+
+<!-- CEO -->
+<section id="ceo" class="py-5 bg-light">
+    <div class="container text-center" data-aos="zoom-in">
+        <h2 class="text-verde">Nosso CEO</h2>
+        <img src="https://i.imgur.com/3GvwNBf.png" class="rounded-circle mb-3" width="150">
+        <h4>Michael Scott</h4>
+        <p>"Eu sou Beyoncé sempre."</p>
+    </div>
+</section>
+
+<!-- Equipe -->
+<section id="equipe" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-verde mb-4">Equipe de Vendas</h2>
+        <div class="row">
+
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card text-center p-3">
+                    <h5>Dwight Schrute</h5>
+                    <p>Assistente do Gerente Regional*</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card text-center p-3">
+                    <h5>Jim Halpert</h5>
+                    <p>Especialista em Pegadinhas Corporativas</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card text-center p-3">
+                    <h5>Pam Beesly</h5>
+                    <p>Recepcionista & Designer Improvisada</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-5 bg-light">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="text-verde">Contato</h2>
+        <p><i class="fa fa-phone"></i> (000) 1234-5678</p>
+        <p><i class="fa fa-map-marker-alt"></i> Scranton, Pennsylvania</p>
+
+        <!-- Google Maps -->
+        <iframe 
+            src="https://maps.google.com/maps?q=Scranton%20PA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-verde text-white text-center py-3">
+    <p>© 2026 CAPs RH - Todos os direitos reservados</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
